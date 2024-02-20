@@ -1,0 +1,79 @@
+{
+  "version" : "1.0.0",
+  "disable" : null,
+  "requiredInstallableUnits" : [ {
+    "id" : "org.talend.lite.bd.components.cosmosdb.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.bd.components.couchbase.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.designer.component.rs.consumer.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.designer.component.ws.consumer.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.di.bigquery.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.di.cdc.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.di.component.azuredlsgen2.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.di.component.neo4j.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.di.component.netsuite.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.di.component.rabbitmq.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.di.component.workday.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.di.components.partitioner.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.di.components.pe.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.di.edifact.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.di.metadata.mdm.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.di.sap.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.di.wsdl.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.di.cyberark.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tck.box.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tck.google.analytics.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tck.httpclient.connector.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tck.jira.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tck.jms.connector.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tck.kudu.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tck.odata.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tck.pgp.connector.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tck.samba.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tck.splunk.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tck.tableau.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tck.zendesk.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tcompv0.azurestorage.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tcompv0.dataprep.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tcompv0.datastewardship.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tcompv0.googledrive.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tcompv0.marketo.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tcompv0.salesforce.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tcompv0.snowflakeee.feature.feature.group"
+  } ]
+}
