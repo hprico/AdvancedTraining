@@ -1,0 +1,125 @@
+package routines;
+
+
+
+/*
+ * user specification: the function's comment should contain keys as follows: 
+ * 1. write about the function's comment but it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class CustomRoutine extends routines.StringHandling {
+
+    /**
+     * Calculates the length of a string. Apply TRIM function to input pareameter.
+     * 
+     * @param string : Passes the strings you want to search.
+	 * @param flagTrim : flag to apply the TRIM function. (1: Yes, 0: No)
+	 * @return int | Integer. Returns -1 if parameter string is null.
+     * 
+     * {talendTypes} int | Integer
+     * 
+     * {Category} Training
+     * 
+     * {param} string("hello world!") string:
+     * 
+     * {param} int(1) flagTrim: flagTrim.
+     * 
+     * {example} len("hello world!",1) # 12
+     */
+    public static int len(String string, int flagTrim) {
+    	if (flagTrim == 1) {
+    		string = !Relational.ISNULL(string) ? StringHandling.TRIM(string) : string;
+    	}
+    	return StringHandling.LEN(string);
+    }
+    
+    /**
+     * Converts all lowercase letters in an expression to uppercase. Apply TRIM function to input pareameters.
+     * 
+     * @param string : Passes the strings you want to modified.
+	 * @param flagTrim : flag to apply the TRIM function. (1: Yes, 0: No)
+	 * @return String. Returns null if parameter string is null.
+	 *  
+     * {talendTypes} String
+     * 
+     * {Category} Training
+     * 
+     * {param} string("Hello") string: String
+     * 
+     * {param} int(1) flagTrim: flagTrim.
+     * 
+     * {example} upcase("Hello",1) # HELLO
+     */
+    public static String upcase(String string, int flagTrim) {
+    	if (flagTrim == 1) {
+    		string = !Relational.ISNULL(string) ? StringHandling.TRIM(string) : string;
+    	}
+    	return StringHandling.UPCASE(string);
+    }
+    
+    /**
+     * Converts all uppercase letters in an expression to lowercase. Apply TRIM function to input pareameters.
+     * 
+     * @param string : Passes the strings you want to modified.
+	 * @param flagTrim : flag to apply the TRIM function. (1: Yes, 0: No)
+	 * @return String. Returns null if parameter string is null.
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} Training
+     * 
+     * {param} string("Hello") string: String
+     * 
+     * {param} int(1) flagTrim: flagTrim.
+     * 
+     * {example} downcase("Hello",1) # hello
+     */
+    public static String downcase(String string, int flagTrim) {
+    	if (flagTrim == 1) {
+    		string = !Relational.ISNULL(string) ? StringHandling.TRIM(string) : string;
+    	}
+    	return StringHandling.DOWNCASE(string);
+    }
+    
+    /**
+     * Remove non alphanumeric characters.
+     *
+     * @param string : Passes the strings you want to modified.
+	 * @param flagTrim : flag to apply the TRIM function. (1: Yes, 0: No)
+	 * @return String. Returns null if text parameter is null.
+	 * 
+     * {talendTypes} String
+     *
+     * {Category} Training
+     *
+     * {param} string("") text: Text to remove accents.
+     * 
+     * {param} int(1) flagTrim: flagTrim.     
+     *
+     * {example} removeAllNonAlphaNumeric("áéRubenñÑÚ -_/\\.,;+-*$%&@#(){}[]",1)
+     */
+    public static String removeAllNonAlphaNumeric(String text, int flagTrim) {
+    	if (flagTrim == 1) {
+    		text = !Relational.ISNULL(text) ? StringHandling.TRIM(text) : text;  
+    	}
+    	if (Relational.ISNULL(text))
+			return null;
+    	else
+    		return StringHandling.CHANGE(text,"[^0-9A-Za-záéíóúÁÉÍÓÚñÑ ]","");
+    }
+    
+        
+}
